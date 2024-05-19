@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    font-family: "Rubik;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/);
+    background-size: 90vh;
+    background-repeat: no-repeat;
+}
+nav a{
+    text-decoration: none;
+}
+nav {
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+
+    display: inline;
+    margin-right: 20px;
+}
+main{
+    display: flex;
+    height: 90vh;
+    width: 90vw;
+    position: absolute;
+
+}
+.Qrcode1{
+    width: 50%;
+    height: 50vh;
+}
+.Qrcode2{
+    width: 50%;
+    height: 50vh;
+}
+figure{
+    text-align: center;
+}
+.Qrcode1 img, .Qrcode2 img{
+    height: 350px;
+
+}
