@@ -33,12 +33,29 @@ text-decoration: none;
 a:hover{
     color: #FEA000;
 }
+.banner{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display:block;
+    justify-content: center;
+    align-items: center;         
+}
+.banner video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+            
+}
 main{
     display: flex;
     height: auto;
     width: 100%;
     position: absolute;
-}
+}/*
 .Qrcode1, .Qrcode2{
     width: 50%;
     height: auto;
@@ -53,4 +70,5 @@ figure{
     text-align: center;
     border-radius: 20px;
 
-}
+}*/
+
