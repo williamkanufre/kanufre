@@ -1,20 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Freeman&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 *{
-    font-family: "Rubik;
-
+    font-family: "Rubik";
 }
 body {
     margin: 0;
     padding: 0;
-    background-image: url(/);
-    background-size: 90vh;
-    background-repeat: no-repeat;
-}
-nav a{
-    text-decoration: none;
+    background-image: url(/img/bck.png);
+    background-size: 100vw 100vh;
+    color: aquamarine;
 }
 nav {
-    padding: 5px;
+    color: #fff;
+    padding: 10px;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -25,29 +22,33 @@ nav ul {
     padding: 0;
 }
 nav ul li {
-
     display: inline;
     margin-right: 20px;
 }
+nav a{
+color: #fff;
+text-decoration: none;
+}
+a:hover{
+    color: #FEA000;
+}
 main{
     display: flex;
-    height: 90vh;
-    width: 90vw;
+    height: auto;
+    width: 100%;
     position: absolute;
-
 }
-.Qrcode1{
+.Qrcode1, .Qrcode2{
     width: 50%;
-    height: 50vh;
-}
-.Qrcode2{
-    width: 50%;
-    height: 50vh;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
 }
 figure{
     text-align: center;
 }
 .Qrcode1 img, .Qrcode2 img{
     height: 350px;
+    text-align: center;
 
 }

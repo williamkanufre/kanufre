@@ -1,8 +1,63 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    font-family: "Rubik";
+}
+body {
+    margin: 0;
+    padding: 0;
     background-image: url(/img/bck.png);
     background-size: 100vw 100vh;
     color: aquamarine;
 }
-h5 img{
-    width: 300px;
+nav {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav a{
+color: #fff;
+text-decoration: none;
+}
+a:hover{
+    color: #FEA000;
+}
+main{
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+.txt_apresentacao h1{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+.square{
+    display: flex;
+    position: absolute;
+}
+.bio_txt{
+    width: 60%;
+    height: 100%;
+    margin: 15px;
+    padding: 5px;
+    line-height: 1.5em
+}
+.certificate{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+img{
+    width: 370px;
 }
