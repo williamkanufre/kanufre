@@ -50,5 +50,6 @@ figure{
 .Qrcode1 img, .Qrcode2 img{
     height: 350px;
     text-align: center;
+    border-radius: 20px;
 
 }
