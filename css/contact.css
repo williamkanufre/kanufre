@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Freeman&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Rubik";
 }
 body {
-    margin: 0;
-    padding: 0;
-    /*
-    background-image: url(/img/bck_contact.png);
-    background-size: 100vw 100vh;*/
-    color: aquamarine;
+    min-height: 100vh;
+    display:grid;
+    place-items: center;
+    padding: 1rem;
+    background: #272a37;
 }
 nav {
     color: #fff;
@@ -33,42 +35,54 @@ text-decoration: none;
 a:hover{
     color: #FEA000;
 }
-.banner{
+form{
     width: 100%;
-    height: auto;
-    overflow: hidden;
-    display:block;
-    justify-content: center;
-    align-items: center;         
+    max-width: 30rem;
 }
-.banner video{
-    position: fixed;
-    top: 0;
-    left: 0;
-    object-fit: cover;
+label, input, textarea, button{
+    display: block;
+}
+input, textarea, button{
     width: 100%;
-    height: auto;
-            
+    font: inherit;
+    padding: 1.25rem;
+    font-weight: 700;
 }
-main{
-    display: flex;
-    height: auto;
-    width: 100%;
-    position: absolute;
-}/*
-.Qrcode1, .Qrcode2{
-    width: 50%;
-    height: auto;
-    margin: 5px;
-    padding: 10px;
+input, textarea{
+    margin-bottom: 1rem;
+    color: #fff;
+    background: #323644;
+    border: 0.125rem solid transparent;
+    border-radius: 1.125rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
-figure{
-    text-align: center;
+input:hover, input:focus,
+textarea:hover, textarea:focus{
+    outline: none;
+    border-color: #1d90f5;
+    box-shadow: 0 0 0 0.3125rem #26344a;
 }
-.Qrcode1 img, .Qrcode2 img{
-    height: 350px;
-    text-align: center;
-    border-radius: 20px;
-
-}*/
-
+label{
+    margin-bottom: 0.5rem;
+    color: #84868f;
+}
+textarea{
+    min-height: 12.5rem;
+    resize: vertical;
+}
+button{
+    border: none;
+    border-radius: 99px;
+    color: #fff;
+    background: #1d90f5;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover, button:focus{
+    outline: none;
+    background: #1c70d3;
+}
+button:disabled{
+    cursor: not-allowed;
+    background: #555b69;
+}
