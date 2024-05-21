@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Freeman&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 *{
     font-family: "Rubik";
-}
-body {
     margin: 0;
     padding: 0;
-    /*
-    background-image: url(/img/bck_bio.png);
-    background-size: 100vw 100vh;
-    */
+}
+body {
+    min-height: 100vh;
+    display:grid;
+    background: #272a37;
     color: aquamarine;
 }
 nav {
@@ -17,6 +16,7 @@ nav {
     text-align: center;
     position: relative;
     z-index: 1;
+    font-weight: 700;
 }
 nav ul {
     list-style-type: none;
@@ -34,30 +34,13 @@ text-decoration: none;
 a:hover{
     color: #FEA000;
 }
-.banner{
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    display:block;
-    justify-content: center;
-    align-items: center;         
-}
-.banner video{
-    position: fixed;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-            
-}
 main{
     width: 100%;
     height: auto;
     position: absolute;
 }
 .txt_apresentacao h1{
-    margin: auto;
+    margin: 25px;
     padding: 10px;
     text-align: center;
 }
@@ -71,7 +54,6 @@ main{
     height: 100%;
     margin: 15px;
     padding: 5px;
-    line-height: 1.5em
 }
 
 article{
@@ -82,6 +64,7 @@ article h3{
     margin: 10px;
     padding: 5px;
     width: 780px;
+    line-height: 1.5em;
 }
 
 .certificate{
