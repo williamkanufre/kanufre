@@ -1,79 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-*{
-    font-family: "Rubik";
-    margin: 0;
-    padding: 0;
-}
+/* biography.css */
+
 body {
-    min-height: 100vh;
-    display:grid;
-    background: #272a37;
-    color: aquamarine;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
 }
+
 nav {
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    font-weight: 700;
+    background-color: #333;
 }
+
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
     margin: 0;
     padding: 0;
 }
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
 }
-nav a{
-color: #fff;
-text-decoration: none;
+
+nav ul li a:hover {
+    background-color: #575757;
 }
-a:hover{
-    color: #FEA000;
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-main{
-    width: 100%;
-    height: auto;
-    position: absolute;
-}
-.txt_apresentacao h1{
-    margin: 25px;
-    padding: 10px;
+
+.txt_apresentacao {
     text-align: center;
+    margin-bottom: 20px;
 }
-.square{
+
+.square {
     display: flex;
-    width: 100%;
-    position:fixed;
-}
-.bio_txt{
-    width: 60%;
-    height: 100%;
-    margin: 15px;
-    padding: 5px;
+    flex-wrap: wrap;
 }
 
-article{
-    margin: 10px;
-    padding: 5px;
-}
-article h3{
-    margin: 10px;
-    padding: 5px;
-    width: 780px;
-    line-height: 1.5em;
+.bio_txt, .certificate {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.certificate{
-    width: 50vw;
-    height: 100%;
+.bio_txt {
+    background-color: #f0f0f0;
+    margin-right: 10px;
+}
+
+.certificate {
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
-img{
-    width: 370px;
-    margin: 10px;
-    padding: 5px;
+
+.certificate img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .square {
+        flex-direction: column;
+    }
+
+    .bio_txt, .certificate {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
