@@ -28,8 +28,6 @@ text-decoration: none;
 }
 a:hover{
     color: #FEA000;
-
-
 }
 .banner{
     width: 100%;
@@ -44,8 +42,8 @@ a:hover{
     top: 0;
     left: 0;
     object-fit: cover;
-    width: 100%;
-            
+    width: 100%;  
+    height: auto;
 }
 footer {
     color: #fff;

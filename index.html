@@ -6,6 +6,7 @@
     <title>Kanufre Tecnologia</title>
     <link rel="stylesheet" type="text/css" href="/css/index.css" media="screen" />
     <link rel="shortcut icon" type="imagex/png" href="/icon/kanufre.ico">
+    <script defer src="/js/index.js"></script>
 </head>
 <body>
     <nav>
@@ -15,7 +16,9 @@
         </ul>
     </nav>
     <div class="banner">
-        <video autoplay muted loop><source src="/movie/movie_bck.mp4" type="" />
+        <video id="bannerVideo" autoplay muted loop>
+            <source id="videoSource" src="/movie/movie_bck.mp4" type="video/mp4">
+        </video>
     </div>
     <footer>
         <p>&copy; 2024 KANUFRE TECNOLOGIA. TODOS OS DIREITOS RESERVADOS.</p>
