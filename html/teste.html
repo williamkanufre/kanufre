@@ -3,27 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário e Imagem</title>
-    <link rel="stylesheet" href="teste.css">
+    <title>Navegação com Drawer</title>
+    <link rel="stylesheet" href="/html/teste.css">
 </head>
 <body>
-    <main>
-        <div class="section-group">
-            <section class="left">
-                <form action="https://formsubmit.co/ajax/williamkanufre@gmail.com" method="POST">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" placeholder="Alfa Bravo Charlie"/>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com"/>
-                    <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" id="mensagem" required placeholder="Escreva sua mensagem"></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </section>
-            <section class="right">
-                <img src="/svg/server-animate.svg" alt="Server Animation">
-            </section>
-        </div>
-    </main>
+    <nav>
+        <button id="menu-toggle">☰</button>
+        <section class="nav-left">
+            <ul>
+                <li>
+                    <a href="#">
+                        <p>INSTAGRAM</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="nav-right">
+            <ul>
+                <li>
+                    <a href="#">
+                        <p>BIOGRAFIA</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>CONTATO</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </nav>
+    <div id="drawer" class="drawer">
+        <button id="close-drawer">✖</button>
+        <ul>
+            <li><a href="#">INSTAGRAM</a></li>
+            <li><a href="#">BIOGRAFIA</a></li>
+            <li><a href="#">CONTATO</a></li>
+        </ul>
+    </div>
+    <div id="overlay" class="overlay"></div>
+
+    <script src="/html/teste.js"></script>
 </body>
 </html>
