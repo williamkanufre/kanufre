@@ -13,7 +13,7 @@ class FormSubmit {
       this.form.innerHTML = this.settings.success;
       setTimeout(() => {
           window.location.reload();
-      }, 2000); // Recarregar a página após 2 segundos
+      }, 3000); // Recarregar a página após 2 segundos
   }
 
   displayError() {
@@ -30,7 +30,7 @@ class FormSubmit {
   }
 
   validateEmail(email) {
-      const allowedDomains = ["gmail.com", "outlook.com", "hotmail.com"];
+      const allowedDomains = ["gmail.com","gmail.com.br", "outlook.com.br","outlook.com", "hotmail.com","hotmail.com.br"];
       const emailDomain = email.split("@")[1];
       return allowedDomains.includes(emailDomain);
   }
@@ -46,7 +46,7 @@ class FormSubmit {
       }
 
       if (!this.validateEmail(email)) {
-          alert("Por favor, utilize um email do Gmail, Outlook ou Hotmail.");
+          alert("Por favor, utilize um email válido.");
           return false;
       }
 
