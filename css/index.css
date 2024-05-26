@@ -8,6 +8,8 @@ body {
     height: auto;
 }
 nav {
+    display: flex;
+    justify-content: space-around;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -15,9 +17,11 @@ nav {
     z-index: 1;
 }
 nav ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
 }
 nav ul li {
     display: inline;
@@ -27,6 +31,7 @@ nav a{
 color: #fff;
 text-decoration: none;
 }
+
 a:hover{
     color: #FEA000;
 }
@@ -53,4 +58,5 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 10px;
 }
