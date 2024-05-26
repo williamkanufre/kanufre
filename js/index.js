@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const video = document.getElementById('bannerVideo');
         const videoSource = document.getElementById('videoSource');
         
-        if (window.matchMedia("(max-width: 600px)").matches) {
+        if (window.matchMedia("(max-width: 500px)").matches){
             // Se a tela for do tamanho de um smartphone, usar este vídeo
-            videoSource.src = "/movie/movie_bck_mobile.mp4";
+            videoSource.src = "/movie/movie_mobile.mp4";
         } else {
-            // Para telas maiores, usar este vídeo
+            // Para telas maiores que 500px, usar este vídeo
             videoSource.src = "/movie/movie_bck.mp4";
         }
         
