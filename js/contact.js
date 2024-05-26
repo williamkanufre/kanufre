@@ -11,6 +11,9 @@ class FormSubmit {
 
   displaySuccess() {
       this.form.innerHTML = this.settings.success;
+      setTimeout(() => {
+          window.location.reload();
+      }, 2000); // Recarregar a página após 2 segundos
   }
 
   displayError() {
