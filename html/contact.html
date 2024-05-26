@@ -6,7 +6,7 @@
     <link rel="shortcut icon" type="imagex/png" href="/icon/kanufre.ico">
     <title>Contato</title>
     <link rel="stylesheet" type="text/css" href="/css/contact.css" media="screen" />
-    <script defer src="#"></script>
+    <script defer src="/js/contact.js"></script>
 </head>
 <body>
     <nav>
@@ -22,14 +22,15 @@
                         <img src="/svg/logo_1.svg" alt="Server Animation">
                 </section>
                 <section class="left">
-                    <form action="https://formsubmit.co/ajax/williamkanufre@gmail.com" method="POST">
+                    <form 
+                        action="https://formsubmit.co/ajax/williamkanufre@gmail.com" method="POST" data-form>
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" id="nome" placeholder="Nome e Sobrenome"/>
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com"/>
                         <label for="mensagem">Mensagem</label>
                         <textarea name="mensagem" id="mensagem" required placeholder="Escreva sua mensagem"></textarea>
-                        <button type="submit">Enviar</button>
+                        <button type="submit" data-button>Enviar</button>
                     </form>
                 </section>
         </div>

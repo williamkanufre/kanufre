@@ -120,6 +120,18 @@ button:disabled{
     cursor: not-allowed;
     background: #555b69;
 }
+.success,
+.error {
+  text-align: center;
+}
+
+.success {
+  color: greenyellow;
+}
+
+.error {
+  color: tomato;
+}
 
 
 @media (max-width: 768px) {
