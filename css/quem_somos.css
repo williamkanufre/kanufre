@@ -1,14 +1,17 @@
-/* biography.css */
-
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    font-family: "Rubik";
+    box-sizing: border-box;
+}
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #272a37;
 }
 
 nav {
-    background-color: #333;
+    background-color: transparent;
+    padding: 10px;
 }
 
 nav ul {
@@ -20,26 +23,23 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0;
-    padding: 0;
+    margin: 0 10px;
 }
-
 nav ul li a {
-    display: block;
-    padding: 15px 20px;
     color: white;
     text-decoration: none;
+    padding: 10px 20px;
+    display: block;
 }
-
-nav ul li a:hover {
-    background-color: #575757;
+nav a:hover{
+    color:#FEA000 ;
 }
 
 main {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    background-color: #272a37;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -57,15 +57,17 @@ main {
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
+    
 }
 
 .bio_txt {
     background-color: #f0f0f0;
-    margin-right: 10px;
+    margin-right: 0px;
+    
 }
 
 .certificate {
-    background-color: #e0e0e0;
+    background-color: #272a37;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,6 +80,9 @@ main {
     height: auto;
     margin-bottom: 20px;
 }
+.txt_apresentacao h1{
+    color:#FEA000 ;;
+}
 
 @media (max-width: 768px) {
     .square {
@@ -87,5 +92,8 @@ main {
     .bio_txt, .certificate {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+    .certificate{
+        width: 250px;
     }
 }
