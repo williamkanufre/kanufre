@@ -30,9 +30,11 @@ class FormSubmit {
   }
 
   validateEmail(email) {
-      const allowedDomains = ["gmail.com","gmail.com.br", "outlook.com.br","outlook.com", "hotmail.com","hotmail.com.br"];
-      const emailDomain = email.split("@")[1];
-      return allowedDomains.includes(emailDomain);
+    //   const allowedDomains = ["gmail.com","gmail.com.br", "outlook.com.br","outlook.com", "hotmail.com","hotmail.com.br"];
+    //   const emailDomain = email.split("@")[1];
+    //   email.indexOf('.com') > -1 || email.indexOf('.com.br') > -1
+    //   return allowedDomains.includes(emailDomain);
+      return email.indexOf('.com') > -1 || email.indexOf('.com.br') > -1
   }
 
   validateForm() {
