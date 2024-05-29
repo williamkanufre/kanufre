@@ -8,7 +8,7 @@
 }
 
 html{
-    scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 
 .container{
@@ -24,7 +24,7 @@ html{
 }
 
 header{
-    background-color: black;
+    background-color: #272a37;
     width: 100%;
     padding: 15px 4%;
     position: sticky;
@@ -37,7 +37,7 @@ header{
 }
 
 .logo img{
-    width: 200px;
+    width: 80px;
     cursor: pointer;
 }
 
@@ -58,7 +58,7 @@ header{
     content: " ";
     width: 0px;
     height: 4px;
-    background-image: linear-gradient(45deg , #FF2500, #FF7100);
+    background-image: linear-gradient(45deg , #FF2500, #FEA000);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -83,7 +83,7 @@ header{
     margin-right: 20px;
     border: 0;
     cursor: pointer;
-    background-image: linear-gradient(45deg , #FF2500, #FF7100);
+    background-image: linear-gradient(45deg , #FF2500, #FEA000);
     border-radius: 5px;
     transition: transform 0.5s;
 }
@@ -146,6 +146,17 @@ section p{
     font-size: 30px;
     cursor: pointer;
     display: none;
+}
+
+.img-desktop{
+    height: 700px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -206px;
+    visibility: hidden;
 }
 
 @media screen and (max-width: 1110px) {
