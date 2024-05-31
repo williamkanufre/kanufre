@@ -8,14 +8,14 @@
     <link rel="shortcut icon" type="imagex/png" href="/icon/kanufre.ico">
     <link rel="stylesheet" href="/css/quem_somos.css">
     <link rel="stylesheet" href="/css/slide.css">
-    <script src="/js/quem_somos.js" defer></script>
+    <link rel="stylesheet" href="">
+    <script src="/js/menu.js" defer></script>
     <title>Quem somos</title>
-    
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo"><img src="/img/logo.png"></div>
+            <div class="logo"><img src="/img/logo.png" alt="Logo"></div>
             <div class="menu">
                 <nav>
                     <a href="/index.html">Página Inicial</a>
@@ -25,61 +25,32 @@
                     <a href="/html/contact.html">Contato</a>
                 </nav>
             </div>
-
+            <div class="hamburger-menu" id="btn-menu">
+                <i class="fa fa-bars"></i>
+            </div>
             <div class="social">
-                <a href="https://www.instagram.com/kanufretecnologia/" target="_blank"><button><i class="fa-brands fa-instagram"></i></button> </a>
+                <a href="https://www.instagram.com/kanufretecnologia/" target="_blank"><button><i class="fa-brands fa-instagram"></i></button></a>
             </div>
         </div>
     </header>
-<!--
-    <section class="slider">
-        <div class="slider-content">
-            
-            <input type="radio" name="btn-radio" id="radio1">
-            <input type="radio" name="btn-radio" id="radio2">
-            <input type="radio" name="btn-radio" id="radio3">
-
-            <div class="slide-box primeiro">
-                <img class="img-desktop" src="" alt="slide 1">
-                <img class="img-mobile" src="img/slide-1-mob.jpg" alt="slide 1">
-            </div>
-
-            <div class="slide-box">
-                <img class="img-desktop" src="img/slide-2.jpg" alt="slide 3">
-                <img class="img-mobile" src="img/slide-2-mob.jpg" alt="slide 1">
-            </div>
-
-            <div class="slide-box">
-                <img class="img-desktop" src="img/slide-3.jpg" alt="slide 3">
-                <img class="img-mobile" src="img/slide-3-mob.jpg" alt="slide 3">
-            </div>
-
-            <div class="nav-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-            </div>
-
-            <div class="nav-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-            </div>
-        </div>
-    </section>
--->
+    <div id="menu-mobile">
+        <nav>
+            <a href="/index.html">Página Inicial</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#equipe">Fundador</a>
+            <a href="#servicos">Serviços</a>
+            <a href="/html/contact.html">Contato</a>
+        </nav>
+    </div>
     <section>
         <a class="anchor" id="sobre"></a>
         <div class="container1">
             <h2>Sobre</h2>
             <p>Bem-vindo ao universo inovador da Kanufre Tecnologia LTDA, onde a paixão pelo futuro e a tradição de excelência se encontram. Fundada com a visão de transformar desafios tecnológicos em soluções inteligentes, nossa empresa se dedica a criar um mundo onde a tecnologia serve como uma extensão natural da criatividade humana.</p><br>
             <h3>Nossa Missão</h3>
-
-                <p>Na Kanufre Tecnologia, acreditamos que a tecnologia deve empoderar as pessoas, facilitando o dia a dia e impulsionando o progresso. Nossa missão é desenvolver soluções tecnológicas de ponta que sejam intuitivas, acessíveis e sustentáveis, sempre colocando nossos clientes no centro de tudo o que fazemos.</p><br>
-        
+            <p>Na Kanufre Tecnologia, acreditamos que a tecnologia deve empoderar as pessoas, facilitando o dia a dia e impulsionando o progresso. Nossa missão é desenvolver soluções tecnológicas de ponta que sejam intuitivas, acessíveis e sustentáveis, sempre colocando nossos clientes no centro de tudo o que fazemos.</p><br>
             <h3>Nossa Visão</h3>
-                <p>Visualizamos um futuro onde a inovação é a força motriz por trás do crescimento global e do bem-estar social. Estamos comprometidos em liderar essa transformação, impulsionados pela nossa paixão por explorar novas fronteiras tecnológicas e pelo nosso compromisso inabalável com a qualidade.</p><br>
-        
+            <p>Visualizamos um futuro onde a inovação é a força motriz por trás do crescimento global e do bem-estar social. Estamos comprometidos em liderar essa transformação, impulsionados pela nossa paixão por explorar novas fronteiras tecnológicas e pelo nosso compromisso inabalável com a qualidade.</p><br>
             <h3>Nossos Valores</h3>
             <ul>
                 <li><strong>Inovação Constante:</strong> Buscamos constantemente novas maneiras de melhorar e revolucionar o mercado tecnológico.</li>
@@ -90,37 +61,32 @@
         </div>
     </section>
     <section>
-        <a class="anchor"  id="equipe"></a>
+        <a class="anchor" id="equipe"></a>
         <div class="container1">
             <h2>Fundador</h2>
-            <p>O fundador se chama William Kanufre, formado em Redes de Computadores pela Universidade Cruzeiro do Sul e Pós-Graduado em Cybersecurity,
-            sempre quis fazer algo que pudesse chamar de seu, isso teve efeito quando conheceu a sua esposa e juntos decidiram abrir a sua primeira empresa, a Kanufre Tecnologia LTDA.</p>
+            <p>O fundador se chama William Kanufre, formado em Redes de Computadores pela Universidade Cruzeiro do Sul e Pós-Graduado em Cybersecurity, sempre quis fazer algo que pudesse chamar de seu, isso teve efeito quando conheceu a sua esposa e juntos decidiram abrir a sua primeira empresa, a Kanufre Tecnologia LTDA.</p>
         </div>
     </section>
     <section>
-        <a class="anchor"  id="servicos"></a>
+        <a class="anchor" id="servicos"></a>
         <div class="container1">
             <h2>Serviços</h2>
-            <p>Nossa empresa oferece uma ampla gama de serviços em tecnologia da informação, atendendo tanto pequenas quanto grandes empresas com eficiência e 
-                qualidade. Entre nossos principais serviços, destacam-se a instalação de câmeras de segurança Intelbras, manutenção de infraestrutura de TI, consultoria 
-                em redes de computadores, e fornecimento de equipamentos de ponta como Mikrotik, Ubiquiti e Intelbras.</p><br>
-
-            <h3>
-                Instalação de Câmeras Intelbras
-            </h3>
-                <p>Garantir a segurança do seu negócio é uma prioridade. Oferecemos serviços completos de instalação de câmeras de segurança Intelbras, desde a análise do ambiente até a configuração final do sistema. Nossos técnicos são altamente capacitados para assegurar que todas as câmeras estejam 
-                    posicionadas estrategicamente, proporcionando cobertura máxima e monitoramento eficiente de suas instalações.</p><br>
+            <p>Nossa empresa oferece uma ampla gama de serviços em tecnologia da informação, atendendo tanto pequenas quanto grandes empresas com eficiência e qualidade. Entre nossos principais serviços, destacam-se a instalação de câmeras de segurança Intelbras, manutenção de infraestrutura de TI, consultoria em redes de computadores, e fornecimento de equipamentos de ponta como Mikrotik, Ubiquiti e Intelbras.</p><br>
+            <h3>Instalação de Câmeras Intelbras</h3>
+            <p>Garantir a segurança do seu negócio é uma prioridade. Oferecemos serviços completos de instalação de câmeras de segurança Intelbras, desde a análise do ambiente até a configuração final do sistema. Nossos técnicos são altamente capacitados para assegurar que todas as câmeras estejam posicionadas estrategicamente, proporcionando cobertura máxima e monitoramento eficiente de suas instalações.</p><br>
             <h3>Manutenção em Infraestrutura</h3>
-                    <p>Manter a infraestrutura de TI funcionando de forma otimizada é essencial para a continuidade dos negócios. Oferecemos serviços de manutenção preventiva e corretiva em toda a sua infraestrutura de TI. Nossa equipe de especialistas está pronta para identificar e resolver problemas rapidamente, minimizando o tempo de inatividade e garantindo que sua rede, 
-                        servidores e outros equipamentos funcionem de maneira eficaz.</p><br>
+            <p>Manter a infraestrutura de TI funcionando de forma otimizada é essencial para a continuidade dos negócios. Oferecemos serviços de manutenção preventiva e corretiva em toda a sua infraestrutura de TI. Nossa equipe de especialistas está pronta para identificar e resolver problemas rapidamente, minimizando o tempo de inatividade e garantindo que sua rede, servidores e outros equipamentos funcionem de maneira eficaz.</p><br>
             <h3>Consultoria em Redes de Computadores</h3>
-            <p>Seja para a expansão de uma rede existente ou a criação de uma nova, nossa consultoria em redes de computadores oferece soluções personalizadas para atender às necessidades específicas do seu negócio. Analisamos suas demandas, projetamos e implementamos redes robustas e seguras, utilizando as melhores práticas e tecnologias disponíveis no mercado. 
-                Com nossa consultoria, você garante uma rede eficiente, segura e preparada para o crescimento.</p><br>
-            <h3>Equipamentos de Qualidade: Mikrotik, Ubiquiti e Intelbras</h3><p>
-                Trabalhamos com os melhores equipamentos disponíveis no mercado para garantir a qualidade e a confiabilidade de nossas soluções. Oferecemos produtos de marcas renomadas como Mikrotik, Ubiquiti e Intelbras, reconhecidas pela sua inovação e desempenho superior. Desde roteadores e switches até sistemas completos de vigilância e controle de acesso, fornecemos 
-                os equipamentos necessários para que sua infraestrutura de TI seja robusta e eficiente.
-            </p><br>
+            <p>Seja para a expansão de uma rede existente ou a criação de uma nova, nossa consultoria em redes de computadores oferece soluções personalizadas para atender às necessidades específicas do seu negócio. Analisamos suas demandas, projetamos e implementamos redes robustas e seguras, utilizando as melhores práticas e tecnologias disponíveis no mercado. Com nossa consultoria, você garante uma rede eficiente, segura e preparada para o crescimento.</p><br>
+            <h3>Equipamentos de Qualidade: Mikrotik, Ubiquiti e Intelbras</h3>
+            <p>Trabalhamos com os melhores equipamentos disponíveis no mercado para garantir a qualidade e a confiabilidade de nossas soluções. Oferecemos produtos de marcas renomadas como Mikrotik, Ubiquiti e Intelbras, reconhecidas pela sua inovação e desempenho superior. Desde roteadores e switches até sistemas completos de vigilância e controle de acesso, fornecemos os equipamentos necessários para que sua infraestrutura de TI seja robusta e eficiente.</p><br>
         </div>
     </section>
+    <script>
+        document.getElementById('btn-menu').onclick = function() {
+            const menuMobile = document.getElementById('menu-mobile');
+            menuMobile.classList.toggle('active');
+        };
+    </script>
 </body>
 </html>
