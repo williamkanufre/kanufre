@@ -120,7 +120,7 @@ section p{
     background-color: #272a37;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-    position: absolute;
+    position: fixed;
     top: 110px;
     right: 0;
     width: 100%;
@@ -139,7 +139,7 @@ section p{
     text-decoration: none;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
-#menu-mobile nav a:hover{
+#menu-mobile nav a:hover, #btn-menu:hover{
     color: #FEA000;
 }
 #menu-mobile nav a:hover{
