@@ -1,4 +1,5 @@
 /* CSS para slider */
+
 section.slider {
     margin: 0 auto;
     width: 100%;
@@ -11,7 +12,7 @@ section.slider {
     width: 500%; /* Ajustado para 5 slides */
     height: auto;
     display: flex;
-    transition: margin-left 1s ease;
+    transition: margin-left 1.5s ease;
 }
 
 .slider-content input, .img-mobile {
@@ -23,7 +24,7 @@ section.slider {
     height: auto;
     position: relative;
     text-align: center;
-    transition: 1s;
+    transition: 2s;
 }
 
 .slide-box img {
