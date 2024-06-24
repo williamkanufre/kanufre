@@ -6,10 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="imagex/png" href="/icon/kanufre.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/biography.css">
     <link rel="stylesheet" href="/css/slide.css">
-    <link rel="stylesheet" href="">
+    <!-- SCRIPTS -->
     <script src="/js/menu.js" defer></script>
+    <script src="/js/contact.js" defer></script>
+    <script src="/js/biography.js" defer></script>
+    <script src="/js/slide.js" defer></script>
     <title>Quem somos</title>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -31,7 +36,7 @@
                     <a href="#sobre">Sobre</a>
                     <a href="#equipe">Fundador</a>
                     <a href="#servicos">Serviços</a>
-                    <a href="/html/contact.html">Contato</a>
+                    <a href="#contato">Contato</a>
                 </nav>
             </div>
             <div class="hamburger-menu" id="btn-menu">
@@ -48,15 +53,58 @@
             <a href="#sobre">Sobre</a>
             <a href="#equipe">Fundador</a>
             <a href="#servicos">Serviços</a>
-            <a href="/html/contact.html">Contato</a>
+            <a href="#contato">Contato</a>
             <a class="social" href="https://www.instagram.com/kanufretecnologia/" target="_blank"><button><i class="fa-brands fa-instagram"></i></button></a>
         </nav>
     </div>
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio0" checked>
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+            <input type="radio" name="btn-radio" id="radio4">
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="/img/1.png" alt="slide 0">
+                <img class="img-mobile" src="" alt="slide 0">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="/img/2.png" alt="slide 1">
+                <img class="img-mobile" src="" alt="slide 1">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="/img/3.png" alt="slide 2">
+                <img class="img-mobile" src="" alt="slide 2">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="/img/4.png" alt="slide 3">
+                <img class="img-mobile" src="" alt="slide 3">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="/img/5.png" alt="slide 4">
+                <img class="img-mobile" src="" alt="slide 4">
+            </div>
+            <div class="nav-auto">
+                <div class="auto-btn0"></div>
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <div class="nav-manual">
+                <label for="radio0" class="manual-btn"></label>
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
     <section>
         <a class="anchor" id="sobre"></a>
         <div class="container1">
             <h2>Sobre</h2>
-            <p>Bem-vindo ao universo inovador da Kanufre Tecnologia LTDA, onde a paixão pelo futuro e a tradição de excelência se encontram. Fundada com a visão de transformar desafios tecnológicos em soluções inteligentes, nossa empresa se dedica a criar um mundo onde a tecnologia serve como uma extensão natural da criatividade humana.</p><br>
+            <p>Bem-vindo ao universo inovador da Kanufre Tecnologia, onde a paixão pelo futuro e a tradição de excelência se encontram.</p><br>
             <h3>Nossa Missão</h3>
             <p>Na Kanufre Tecnologia, acreditamos que a tecnologia deve empoderar as pessoas, facilitando o dia a dia e impulsionando o progresso. Nossa missão é desenvolver soluções tecnológicas de ponta que sejam intuitivas, acessíveis e sustentáveis, sempre colocando nossos clientes no centro de tudo o que fazemos.</p><br>
             <h3>Nossa Visão</h3>
@@ -76,8 +124,7 @@
             <h2>Fundador</h2>
             <p>O fundador se chama William Kanufre, formado em Redes de Computadores pela Universidade Cruzeiro do Sul, 
                 certificado internacionalmente pela academia MikrotikIs SIA - MikroTik Certified Network Associate (MTCNA)
-                 e Pós-Graduado em Cybersecurity,
-                 sempre desejou fazer algo que pudesse chamar de seu, assim sugiu a Kanufre Tecnologia LTDA.
+                 e Pós-Graduado em Cybersecurity, sempre desejou fazer algo que pudesse chamar de seu, assim sugiu a Kanufre Tecnologia.
             </p>
         </div>
     </section>
@@ -85,29 +132,45 @@
         <a class="anchor" id="servicos"></a>
         <div class="container1">
             <h2>Serviços</h2>
-            <p>Nossa empresa oferece uma ampla gama de serviços em tecnologia da informação, atendendo tanto pequenas quanto grandes empresas com eficiência e qualidade. Entre nossos principais serviços, destacam-se a instalação de câmeras de segurança Intelbras, manutenção de infraestrutura de TI, consultoria em redes de computadores, e fornecimento de equipamentos de ponta como Mikrotik, Ubiquiti e Intelbras.</p><br>
             <h3>Instalação de Câmeras Intelbras</h3>
             <p>Garantir a segurança do seu negócio é uma prioridade. Oferecemos serviços completos de instalação de câmeras de segurança Intelbras, desde a análise do ambiente até a configuração final do sistema. Nossos técnicos são altamente capacitados para assegurar que todas as câmeras estejam posicionadas estrategicamente, proporcionando cobertura máxima e monitoramento eficiente de suas instalações.</p><br>
             <h3>Manutenção em Infraestrutura</h3>
             <p>Manter a infraestrutura de TI funcionando de forma otimizada é essencial para a continuidade dos negócios. Oferecemos serviços de manutenção preventiva e corretiva em toda a sua infraestrutura de TI. Nossa equipe de especialistas está pronta para identificar e resolver problemas rapidamente, minimizando o tempo de inatividade e garantindo que sua rede, servidores e outros equipamentos funcionem de maneira eficaz.</p><br>
             <h3>Consultoria em Redes de Computadores</h3>
-            <p>Seja para a expansão de uma rede existente ou a criação de uma nova, nossa consultoria em redes de computadores oferece soluções personalizadas para atender às necessidades específicas do seu negócio. Analisamos suas demandas, projetamos e implementamos redes robustas e seguras, utilizando as melhores práticas e tecnologias disponíveis no mercado. Com nossa consultoria, você garante uma rede eficiente, segura e preparada para o crescimento.</p><br>
-            <h3>Equipamentos de Qualidade: Mikrotik, Ubiquiti e Intelbras</h3>
-            <p>Trabalhamos com os melhores equipamentos disponíveis no mercado para garantir a qualidade e a confiabilidade de nossas soluções. Oferecemos produtos de marcas renomadas como Mikrotik, Ubiquiti e Intelbras, reconhecidas pela sua inovação e desempenho superior. Desde roteadores e switches até sistemas completos de vigilância e controle de acesso, fornecemos os equipamentos necessários para que sua infraestrutura de TI seja robusta e eficiente.</p><br>
+            <p>Seja para a expansão de uma rede existente ou a criação de uma nova, nossa consultoria em redes de computadores oferece soluções personalizadas para atender às suas necessidades específicas. Realizamos uma análise detalhada de sua infraestrutura atual, identificando áreas de melhoria e implementando soluções que aumentam a eficiência e a segurança da rede.</p><br>
+            <h3>Suporte Técnico Remoto e Presencial</h3>
+            <p>Problemas técnicos podem surgir a qualquer momento e impactar suas operações. Oferecemos suporte técnico tanto remoto quanto presencial para resolver rapidamente qualquer questão relacionada aos seus sistemas de TI. Nossa equipe está disponível para fornecer assistência imediata, garantindo que sua empresa volte a funcionar plenamente no menor tempo possível.</p><br>
+            <h3>Treinamento e Capacitação</h3>
+            <p>O conhecimento é uma ferramenta poderosa. Oferecemos treinamentos e capacitações personalizadas para sua equipe, abordando desde o uso eficiente de ferramentas e sistemas até as melhores práticas em segurança da informação. Nossos programas de treinamento são desenvolvidos para garantir que seus colaboradores estejam sempre atualizados e capacitados a lidar com os desafios tecnológicos do dia a dia.</p><br>
         </div>
     </section>
-    <script>
-        document.getElementById('btn-menu').onclick = function() {
-            const menuMobile = document.getElementById('menu-mobile');
-            menuMobile.classList.toggle('active');
-        };
-
-        document.querySelectorAll('#menu-mobile nav a').forEach(link => {
-            link.onclick = function() {
-                const menuMobile = document.getElementById('menu-mobile');
-                menuMobile.classList.remove('active');
-            };
-        });
-    </script>
+    <section>
+        <a class="anchor" id="contato"></a>
+        <div class="container1">
+            <h2>Contato</h2>
+            <p>Entre em contato para conhecer mais sobre nossos serviços e como podemos ajudar sua empresa a crescer através da tecnologia. Estamos à disposição para esclarecer dúvidas e oferecer soluções personalizadas que atendam às suas necessidades.</p>
+            <br>
+            <form class="form" id="contact-form">
+                <div class="input-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Kanufre & Fragoso Tecnologia Ltda. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

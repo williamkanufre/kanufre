@@ -1,5 +1,5 @@
-
-section.slider{
+/* CSS para slider */
+section.slider {
     margin: 0 auto;
     width: 100%;
     height: auto;
@@ -7,78 +7,88 @@ section.slider{
     overflow: hidden;
 }
 
-.slider-content{
-    width: 400%;
+.slider-content {
+    width: 500%; /* Ajustado para 5 slides */
     height: auto;
     display: flex;
+    transition: margin-left 1s ease;
 }
 
-.slider-content input, .img-mobile{
+.slider-content input, .img-mobile {
     display: none;
 }
 
-.slide-box{
-    width: 25%;
+.slide-box {
+    width: 20%; /* Ajustado para 5 slides */
     height: auto;
     position: relative;
     text-align: center;
     transition: 1s;
 }
 
-.slide-box img{
+.slide-box img {
     width: 100%;
+    height: auto; /* Mantém a proporção das imagens */
+    object-fit: cover; /* Garante que as imagens se ajustem corretamente dentro do contêiner */
 }
 
-.nav-manual, .nav-auto{
+.nav-manual, .nav-auto {
     position: absolute;
     width: 100%;
-    margin-top: 35%;
+    bottom: 20px; /* Ajusta a posição dos botões de navegação */
     display: flex;
     justify-content: center;
 }
 
-.nav-manual .manual-btn, .nav-auto div{
-    border: 1px solid #FEA000;
+.nav-manual .manual-btn, .nav-auto div {
+    border: 1px solid #ff0054;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.2s;
 }
 
-.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
     margin-right: 10px;
 }
 
-.nav-manual .manual-btn:hover{
-    background-color: #FEA000;
+.nav-manual .manual-btn:hover {
+    background-color: #ff0054;
 }
 
-#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
-    background-color: #FEA000;
-}
-
-#radio1:checked ~ .primeiro{
+#radio0:checked ~ .slider-content {
     margin-left: 0%;
 }
 
-#radio2:checked ~ .primeiro{
-    margin-left: -25%;
+#radio1:checked ~ .slider-content {
+    margin-left: -20%;
 }
 
-#radio3:checked ~ .primeiro{
-    margin-left: -50%;
+#radio2:checked ~ .slider-content {
+    margin-left: -40%;
+}
+
+#radio3:checked ~ .slider-content {
+    margin-left: -60%;
+}
+
+#radio4:checked ~ .slider-content {
+    margin-left: -80%;
 }
 
 @media screen and (max-width: 900px) {
-    .img-desktop{
+    .img-desktop {
         display: none;
     }
 
-    .img-mobile{
+    .img-mobile {
         display: block;
+        width: 100%;
+        height: auto; /* Mantém a proporção das imagens móveis */
+        object-fit: cover; /* Garante que as imagens móveis se ajustem corretamente dentro do contêiner */
     }
 
-    .nav-auto, .nav-manual{
+    .nav-auto, .nav-manual {
         margin-top: 60%;
     }
 }

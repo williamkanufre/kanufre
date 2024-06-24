@@ -6,7 +6,9 @@
     <title>Kanufre Tecnologia</title>
     <link rel="shortcut icon" type="imagex/png" href="/icon/kanufre.ico">
     <link rel="stylesheet" type="text/css" href="/css/index.css" media="screen"/>
+    <link rel="stylesheet" href="/css/cookies.css">
     <script defer src="/js/index.js"></script>
+    <script defer src="/js/cookies.js"></script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9050NV69VY"></script>
@@ -14,7 +16,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-9050NV69VY');
 </script>
 <body>
@@ -23,28 +24,34 @@
             <ul>
                 <li>
                     <a href="/html/maintenance.html">
-                        <p>
-                           QUEM SOMOS
-                        </p>
+                        <p>QUEM SOMOS</p>
                     </a>
                 </li>
                 <li>
                     <a href="/html/maintenance.html">
-                        <p>
-                            CONTATO
-                        </p>
+                        <p>CONTATO</p>
                     </a>
                 </li>
             </ul>
-        </nav>
         </section>
+    </nav>
     <div class="banner">
         <video id="bannerVideo" autoplay muted loop>
             <source id="videoSource" preload="auto" src="/movie/movie_bck.mp4" type="video/mp4" poster="img/sader-poster.jpg">
         </video>
     </div>
     <footer>
-        <p>&copy; 2024 KANUFRE TECNOLOGIA LTDA. TODOS OS DIREITOS RESERVADOS.</p>
+        <section class="msg_cookies">
+            <div class="cookies-msg" id="cookies-msg">
+                <div class="cookies-txt">
+                    <p>Este site usa cookies e tecnologias afins, que são pequenos arquivos ou pedaços de texto baixados para um aparelho quando o visitante acessa um website ou aplicativo. Ao utilizar nosso site você está de acordo com a utilização dos cookies para te proporcionar uma melhor experiência.</p>
+                    <div class="cookies-btn">
+                        <button onclick="aceito()">Aceito</button>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <p>&copy; 2024 Kanufre & Fragoso Tecnologia Ltda. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

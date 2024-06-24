@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Freeman&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-*{
+* {
     font-family: "Rubik";
 }
 body {
@@ -28,23 +28,22 @@ nav ul li {
     display: inline;
     margin-right: 20px;
 }
-nav a{
-color: #fff;
-text-decoration: none;
+nav a {
+    color: #fff;
+    text-decoration: none;
 }
-
-a:hover{
+a:hover {
     color: #FEA000;
 }
-.banner{
+.banner {
     width: 100%;
     height: 65vh;
     overflow: hidden;
-    display:block;
+    display: block;
     justify-content: center;
     align-items: center;         
 }
-.banner video{
+.banner video {
     position: fixed;
     top: 0;
     left: 0;
@@ -60,4 +59,43 @@ footer {
     bottom: 0;
     width: 100%;
     font-size: 10px;
+}
+.cookies-msg {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo transparente */
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 15px;
+    display: none;
+}
+.cookies-msg.mostrar {
+    display: block;
+}
+.cookies-msg .cookies-txt {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    color: #FEA000; /* Cor do texto */
+}
+.cookies-msg .cookies-btn {
+    margin-left: 30px;
+}
+.cookies-msg .cookies-btn button {
+    background-color: #323644;
+    color: #FEA000; /* Cor do texto do botão */
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 40px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 0.800rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.cookies-msg .cookies-btn button:hover,.cookies-msg .cookies-btn button:focus {
+    outline: none;
+    border-color: #1d90f5;
+    box-shadow: 0 0 0 0.3125rem #26344a;
 }
