@@ -105,6 +105,9 @@ header {
     transform: scale(0.9);
 }
 
+.container1{
+    margin-top: 106px;
+}
 .cont-sec{
     padding: 50px 10%;
     border-bottom: 1px solid #ccc;
