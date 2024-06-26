@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 /* CSS base */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +12,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.container {
+.container { /*Mexe no menu mobile*/
     max-width: 1080px;
     margin: 0 auto;
     display: flex;
@@ -21,7 +23,7 @@ html {
 header {
     background-color: #272a37;
     width: 100%;
-    padding: 15px 4%;
+    padding: 10px 4%;
     position: sticky;
     top: 0;
     z-index: 9999;
@@ -32,7 +34,7 @@ header {
 }
 
 .logo img {
-    width: 80px;
+    width: 60px;
     cursor: pointer;
 }
 
@@ -103,6 +105,20 @@ header {
     transform: scale(0.9);
 }
 
+.cont-sec{
+    padding: 50px 10%;
+    border-bottom: 1px solid #ccc;
+}
+.cont-sec h2{
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-size: 18pt;
+}
+
+.cont-sec p{
+    font-size: 12pt;
+}
+
 /* Estilização Mobile */
 #menu-mobile {
     background-color: #272a37;
@@ -143,6 +159,15 @@ header {
     font-size: 30px;
     cursor: pointer;
     display: none;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color:#ff0054;
+}
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: #272a37;
 }
 
 /* Media queries para responsividade */

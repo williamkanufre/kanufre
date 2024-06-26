@@ -121,11 +121,11 @@ button:disabled{
 }
 
 .success {
-  color: greenyellow;
+  color: #ADFF2F;
 }
 
 .error {
-  color: tomato;
+  color: #ff0054;
 }
 
 

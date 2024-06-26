@@ -38,7 +38,7 @@ section.slider{
     position: absolute;
     width: 100%;
     bottom: 120px; /* Ajusta a posição dos botões de navegação */
-    display: flex;
+    display: none;
     justify-content: center;
     z-index: 10px;
 }
