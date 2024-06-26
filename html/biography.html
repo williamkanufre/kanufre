@@ -17,14 +17,6 @@
     <script src="/js/slide.js" defer></script>
     <title>Quem somos</title>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9050NV69VY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-9050NV69VY');
-</script>
 <body>
     <header>
         <div class="container">
@@ -46,75 +38,133 @@
             </div>
         </div>
     </header>
-    
-    <!-- Sidebar para mobile -->
-    <div id="sidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" id="btn-close">&times;</a>
-        <a href="/index.html">Página Inicial</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#equipe">Fundador</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#contato">Contato</a>
-        <a class="social" href="https://www.instagram.com/kanufretecnologia/" target="_blank"><button><i class="fa-brands fa-instagram"></i></button></a>
+    <div id="menu-mobile">
+        <nav class="nav-mobile">
+            <a href="/index.html">Página Inicial</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#equipe">Fundador</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+            <a class="social" href="https://www.instagram.com/kanufretecnologia/" target="_blank"><button><i class="fa-brands fa-instagram"></i></button></a>
+        </nav>
     </div>
-    
-    <div id="main">
-        <section class="slider">
-            <div class="slider-content">
-                <input type="radio" name="btn-radio" id="radio0" checked>
-                <input type="radio" name="btn-radio" id="radio1">
-                <input type="radio" name="btn-radio" id="radio2">
-                <input type="radio" name="btn-radio" id="radio3">
-                <input type="radio" name="btn-radio" id="radio4">
-    
-                <div class="slide-box primeiro">
-                    <img class="img-desktop" src="/img/Desktop/1.png" alt="slide 0">
-                    <img class="img-mobile" src="/img/Mobile/1.png" alt="slide 0">
-                </div>
-                <div class="slide-box">
-                    <img class="img-desktop" src="/img/Desktop/2.png" alt="slide 1">
-                    <img class="img-mobile" src="/img/Mobile/2.png" alt="slide 1">
-                </div>
-                <div class="slide-box">
-                    <img class="img-desktop" src="/img/Desktop/3.png" alt="slide 2">
-                    <img class="img-mobile" src="/img/Mobile/3.png" alt="slide 2">
-                </div>
-                <div class="slide-box">
-                    <img class="img-desktop" src="/img/Desktop/4.png" alt="slide 3">
-                    <img class="img-mobile" src="/img/Mobile/4.png" alt="slide 3">
-                </div>
-                <div class="slide-box">
-                    <img class="img-desktop" src="/img/Desktop/5.png" alt="slide 4">
-                    <img class="img-mobile" src="/img/Mobile/5.png" alt="slide 4">
-                </div>
-                <div class="nav-auto">
-                    <div class="auto-btn0"></div>
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-                <div class="nav-manual">
-                    <label for="radio0" class="manual-btn"></label>
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                </div>
-            </div>
-        </section>
-    </div>
-    
-    <script>
-        document.getElementById("btn-menu").onclick = function() {
-            document.getElementById("sidebar").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-        }
+    <section class="slider">
+        <div class="slider-content">
+            <input class="inp-btn" type="radio" name="btn-radio" id="radio1" checked>
+            <input class="inp-btn" type="radio" name="btn-radio" id="radio2">
+            <input class="inp-btn" type="radio" name="btn-radio" id="radio3">
+            <input class="inp-btn" type="radio" name="btn-radio" id="radio4">
+            <input class="inp-btn" type="radio" name="btn-radio" id="radio5">
 
-        document.getElementById("btn-close").onclick = function() {
-            document.getElementById("sidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-        }
-    </script>
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="/img/Desktop/1.png" alt="slide 0">
+                <img class="img-mobile" src="/img/Mobile/1.png" alt="slide 0">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="/img/Desktop/2.png" alt="slide 1">
+                <img class="img-mobile" src="/img/Mobile/2.png" alt="slide 1">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="/img/Desktop/3.png" alt="slide 2">
+                <img class="img-mobile" src="/img/Mobile/3.png" alt="slide 2">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="/img/Desktop/4.png" alt="slide 3">
+                <img class="img-mobile" src="/img/Mobile/4.png" alt="slide 3">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="/img/Desktop/5.png" alt="slide 4">
+                <img class="img-mobile" src="/img/Mobile/5.png" alt="slide 4">
+            </div>
+        </div>
+        <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+        </div>
+        <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+        </div>
+    </section>
+    <!--
+    <section>
+        <a class="anchor" id="sobre"></a>
+        <div class="container1">
+            <h2>Sobre</h2>
+            <p>Bem-vindo ao universo inovador da Kanufre Tecnologia, onde a paixão pelo futuro e a tradição de excelência se encontram.</p><br>
+            <h3>Nossa Missão</h3>
+            <p>Na Kanufre Tecnologia, acreditamos que a tecnologia deve empoderar as pessoas, facilitando o dia a dia e impulsionando o progresso. Nossa missão é desenvolver soluções tecnológicas de ponta que sejam intuitivas, acessíveis e sustentáveis, sempre colocando nossos clientes no centro de tudo o que fazemos.</p><br>
+            <h3>Nossa Visão</h3>
+            <p>Visualizamos um futuro onde a inovação é a força motriz por trás do crescimento global e do bem-estar social. Estamos comprometidos em liderar essa transformação, impulsionados pela nossa paixão por explorar novas fronteiras tecnológicas e pelo nosso compromisso inabalável com a qualidade.</p><br>
+            <h3>Nossos Valores</h3>
+            <ul>
+                <li><strong>Inovação Constante:</strong> Buscamos constantemente novas maneiras de melhorar e revolucionar o mercado tecnológico.</li>
+                <li><strong>Excelência:</strong> Padrões elevados de qualidade são a base de todos os nossos produtos e serviços.</li>
+                <li><strong>Sustentabilidade:</strong> Integrar práticas sustentáveis em nossos processos é essencial para garantir um futuro melhor para todos.</li>
+                <li><strong>Foco no Cliente:</strong> As necessidades e expectativas dos nossos clientes orientam cada decisão que tomamos.</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <a class="anchor" id="equipe"></a>
+        <div class="container1">
+            <h2>Fundador</h2>
+            <p>O fundador se chama William Kanufre, formado em Redes de Computadores pela Universidade Cruzeiro do Sul, 
+                certificado internacionalmente pela academia MikrotikIs SIA - MikroTik Certified Network Associate (MTCNA)
+                 e Pós-Graduado em Cybersecurity, sempre desejou fazer algo que pudesse chamar de seu, assim sugiu a Kanufre Tecnologia.
+            </p>
+        </div>
+    </section>
+    <section>
+        <a class="anchor" id="servicos"></a>
+        <div class="container1">
+            <h2>Serviços</h2>
+            <h3>Instalação de Câmeras Intelbras</h3>
+            <p>Garantir a segurança do seu negócio é uma prioridade. Oferecemos serviços completos de instalação de câmeras de segurança Intelbras, desde a análise do ambiente até a configuração final do sistema. Nossos técnicos são altamente capacitados para assegurar que todas as câmeras estejam posicionadas estrategicamente, proporcionando cobertura máxima e monitoramento eficiente de suas instalações.</p><br>
+            <h3>Manutenção em Infraestrutura</h3>
+            <p>Manter a infraestrutura de TI funcionando de forma otimizada é essencial para a continuidade dos negócios. Oferecemos serviços de manutenção preventiva e corretiva em toda a sua infraestrutura de TI. Nossa equipe de especialistas está pronta para identificar e resolver problemas rapidamente, minimizando o tempo de inatividade e garantindo que sua rede, servidores e outros equipamentos funcionem de maneira eficaz.</p><br>
+            <h3>Consultoria em Redes de Computadores</h3>
+            <p>Seja para a expansão de uma rede existente ou a criação de uma nova, nossa consultoria em redes de computadores oferece soluções personalizadas para atender às suas necessidades específicas. Realizamos uma análise detalhada de sua infraestrutura atual, identificando áreas de melhoria e implementando soluções que aumentam a eficiência e a segurança da rede.</p><br>
+            <h3>Suporte Técnico Remoto e Presencial</h3>
+            <p>Problemas técnicos podem surgir a qualquer momento e impactar suas operações. Oferecemos suporte técnico tanto remoto quanto presencial para resolver rapidamente qualquer questão relacionada aos seus sistemas de TI. Nossa equipe está disponível para fornecer assistência imediata, garantindo que sua empresa volte a funcionar plenamente no menor tempo possível.</p><br>
+            <h3>Treinamento e Capacitação</h3>
+            <p>O conhecimento é uma ferramenta poderosa. Oferecemos treinamentos e capacitações personalizadas para sua equipe, abordando desde o uso eficiente de ferramentas e sistemas até as melhores práticas em segurança da informação. Nossos programas de treinamento são desenvolvidos para garantir que seus colaboradores estejam sempre atualizados e capacitados a lidar com os desafios tecnológicos do dia a dia.</p><br>
+        </div>
+    </section>
+    <section>
+        <a class="anchor" id="contato"></a>
+        <div class="container1">
+            <h2>Contato</h2>
+            <p>Entre em contato para conhecer mais sobre nossos serviços e como podemos ajudar sua empresa a crescer através da tecnologia. Estamos à disposição para esclarecer dúvidas e oferecer soluções personalizadas que atendam às suas necessidades.</p>
+            <br>
+            <form class="form" id="contact-form">
+                <div class="input-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Kanufre & Fragoso Tecnologia Ltda. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    -->
 </body>
 </html>
