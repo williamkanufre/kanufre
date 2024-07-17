@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* CSS base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik";
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEA000;
+}
+
+h1 {
+    color: #272a37;
+    padding: 15px;
+    margin: 25px;
+    background-color: #FEA000;
+    border-radius: 10px;
+    border: solid #000;
+    transition: opacity 0.5s ease;
+}
+
+h1:hover {
+    opacity: 0.6;
+}
