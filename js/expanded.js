@@ -1,15 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const imgs = document.querySelectorAll('.expandable');
+    const imgs = document.querySelectorAll('.expandable-desktop');
     const backdrop = document.getElementById('backdrop');
     const expandWidth = '350px';  // Ajuste a largura conforme necessário
     const expandHeight = '500px'; // Ajuste a altura conforme necessário
 
     imgs.forEach(img => {
         img.addEventListener('click', () => {
-            img.classList.add('expanded');
-            backdrop.classList.add('visible');
-            img.style.width = expandWidth;  // Define a largura da imagem
-            img.style.height = expandHeight; // Define a altura da imagem
+            if (window.innerWidth >= 768) {  // Verifica se a largura da janela é de desktop
+                img.classList.add('expanded');
+                backdrop.classList.add('visible');
+                img.style.width = expandWidth;  // Define a largura da imagem
+                img.style.height = expandHeight; // Define a altura da imagem
+            }
         });
     });
 

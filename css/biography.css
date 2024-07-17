@@ -133,7 +133,7 @@ header {
     transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 /* Ajustes para o estado de hover */
-.cont-sec .img-certificate-mtcna:hover{
+.img-certificate-mtcna:hover{
     transform: scale(1.1); /* Aumenta a escala da imagem em 10% */
     transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
 }
@@ -229,6 +229,7 @@ header {
     width: 10px;
     background-color: #272a37;
 }
+/* Estilos para a imagem e backdrop na versão desktop */
 @media screen and (max-width: 768px) {
     .cont-sec {
         flex-direction: column; /* Muda a direção do layout para coluna em telas pequenas */
@@ -236,16 +237,29 @@ header {
     }
 
     .img-certificate-mtcna {
-        margin-top: 20px; /* Adiciona espaço acima da imagem */
         width: 100%; /* Ajusta a largura da imagem para 100% da largura disponível */
         max-width: 300px; /* Define um limite máximo de largura para a imagem */
         height: auto; /* Ajusta a altura automaticamente para manter a proporção */
     }
-    .cont-sec .img-fundador {
+    .img-fundador {
         flex-direction: column; /* Alinha a imagem verticalmente abaixo do conteúdo */
         align-items: center; /* Centraliza a imagem */
     }
+    .cont-sec img.expanded {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1); /* Mantendo o scale(1) */
+        z-index: 1000;
+        transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+    }
+
+    .expandable-desktop:hover {
+        transform: scale(1.1); /* Aumenta a escala da imagem em 10% */
+        transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+    }
 }
+
 
 /* Media queries para responsividade */
 @media screen and (max-width: 1110px) {
