@@ -111,6 +111,7 @@ header {
 /* Estilo para contêiner */
 .cont-sec{
     display: flex;
+    flex-direction: column; /* Alinha o conteúdo em uma coluna */
     padding: 50px 10%;
     border-bottom: 1px solid #ccc;
     background-color: #272a37;
@@ -131,6 +132,17 @@ header {
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+.certification-stamps {
+    margin-top: 8px; /* Espaçamento entre a imagem MTCNA e os selos */
+    display: flex;
+    justify-content: center; /* Centraliza os selos */
+    gap: 10px; /* Espaçamento entre os selos */
+}
+.selo-certification {
+    width: 150px; /* Ajuste o tamanho */
+    height: auto;
+    border-radius: 5px;
 }
 /* Ajustes para o estado de hover */
 .img-certificate-mtcna:hover{
@@ -263,6 +275,11 @@ header {
     width: 10px;
     background-color: #272a37;
 }
+/* Ajuste para rolagem suave e alinhamento perfeito com o topo */
+#sobre, #equipe, #servicos {
+    scroll-margin-top: 85px; /* Altera este valor para a altura do seu cabeçalho fixo */
+}
+
 /* Estilos para a imagem e backdrop na versão desktop */
 @media screen and (max-width: 768px) {
     .cont-sec {
@@ -315,4 +332,19 @@ header {
         height: calc(100vh - 77px);
         visibility: visible;
     }
+    .cont-sec {
+        flex-direction: column; /* Mantém a direção da coluna para mobile */
+        align-items: center; /* Centraliza o conteúdo no mobile */
+    }
+
+    .certification-stamps {
+        flex-direction: column; /* Alinha os selos verticalmente no mobile */
+        gap: 15px; /* Adiciona espaçamento extra entre os selos no mobile */
+    }
+
+    .selo-certification {
+        width: 80px; /* Reduz o tamanho dos selos no mobile */
+        height: auto;
+    }
 }
+
