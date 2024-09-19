@@ -311,28 +311,42 @@ Certificados Mikrotik
  ###############################################################*/
 .certification-stamps {
     display: flex;
-    justify-content: space-between; /* Distribui o espaço horizontalmente */
     align-items: center; /* Alinha verticalmente */
     margin-top: 50px;
+    justify-content: space-around;;
     flex-wrap: wrap; /* Permite que as imagens quebrem de linha em telas menores */
-    width: 100%; /* Garante que o contêiner ocupe a largura total */
+    width: 100%; /* Garante que o conteiner ocupe a largura total */
     max-width: 800px; /* Define um tamanho máximo para a largura */
-    margin: 0 auto; /* Centraliza o contêiner */
+    margin: 0 auto; /*Centraliza o contêiner*/
     }
 
 /* Classe comum para os selos */
     .selo-certification {
-        width: 150px;
+        width: 120px;
         height: auto;
         transition: transform 0.3s ease; /* Efeito de transição suave */
         padding: 10px;
     }
-
+    .center-stemp{
+        width: 130px;
+        transition: none;
+        transform: none;
+        padding: 10px;
+    }
+    .right-stemp{
+        margin-left: -50px;
+    }
+    .left-stemp{
+        margin-right: -50px;
+    }
+    /* Destacar a imagem central */
+    .center-stemp .selo-certification {
+        transform: scale(1.2); /* Aumenta o selo do meio */
+    }
 /* Efeito hover para aumentar os selos */
 .selo-certification:hover {
     transform: scale(1.1);
 }
-
 /* Media queries para responsividade */
 @media screen and (max-width: 1110px) {
     .menu,
@@ -367,7 +381,7 @@ Certificados Mikrotik
 
     .img-certificate-mtcna {
         width: 100%; /* Ajusta a largura da imagem para 100% da largura disponível */
-        max-width: 300px; /* Define um limite máximo de largura para a imagem */
+        max-width: 400px; /* Define um limite máximo de largura para a imagem */
         height: auto; /* Ajusta a altura automaticamente para manter a proporção */
     }
     .img-fundador {
@@ -383,7 +397,7 @@ Certificados Mikrotik
         transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
     }
     .expandable-desktop:hover {
-        transform: scale(1.1); /* Aumenta a escala da imagem em 10% */
+        transform: scale(1.2); /* Aumenta a escala da imagem em 10% */
         transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
     }
     /* #############################################
@@ -401,5 +415,8 @@ Certificados Mikrotik
     .selo-certification:hover {
     transform: none;
 }
+    .right-stemp, .left-stemp{
+        margin: 0;
+    }
 }
 
