@@ -115,20 +115,16 @@
             <h2>FUNDADOR</h2>
             <p>O fundador, William Kanufre, é graduado em Redes de Computadores pela Universidade Cruzeiro do Sul e possui certificação internacional da academia MikrotikIs SIA como MikroTik Certified Network Associate (MTCNA). Além disso, é pós-graduado em Cybersecurity. Movido pelo desejo de criar algo próprio, ele deu origem à Kanufre Tecnologia.</p>
         </div>
-        <div class="img-fundador" id="imgs-founder">
-            <img src="/img/MTCNA.png" alt="Certificado MTCNA" class="img-certificate-mtcna expandable expandable-desktop">
+        <div class="carousel-container" id="imgs-founder">
+            <!-- Certificados -->
+            <img src="/img/MTCNA.png" alt="Certificado MTCNA" class="carousel-image active img-certificate-mtcna expandable expandable-desktop">
+            <img src="/img/MTCRE.png" alt="Certificado MTCRE" class="carousel-image img-certificate-mtcna expandable expandable-desktop">
+            <img src="/img/MTCSE.png" alt="Certificado MTCSE" class="carousel-image img-certificate-mtcna expandable expandable-desktop">
+        
+            <!-- Setas de navegação -->
+            <span class="arrow arrow-left" onclick="changeImage(-1)">&#10094;</span>
+            <span class="arrow arrow-right" onclick="changeImage(1)">&#10095;</span>
         </div>
-        <section class="certification-stamps" id="certification-stamps">
-            <div class="left-stemp">
-                <img src="/img/selo.png" alt="Certificado Cyber" class="selo-certification">
-            </div>
-            <div class="center-stemp">
-                <img src="/img/selo1.png" alt="Certificado Mulher" class="selo-certification">
-            </div>
-            <div class="right-stemp">
-                <img src="/img/selo2.png" alt="Certificado LGPD" class="selo-certification">
-            </div>
-        </section>
     </section>
     <section class="cont-sec">
         <a class="anchor" id="servicos"></a>
@@ -155,4 +151,18 @@
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/6dda5f6271.js" crossorigin="anonymous"></script>
 </body>
+<footer>
+    <!-- Selos de Certificação -->
+    <section class="certification-stamps" id="certification-stamps">
+        <div class="left-stemp">
+            <img src="/img/selo.png" alt="Certificado Cyber" class="selo-certification">
+        </div>
+        <div class="center-stemp">
+            <img src="/img/selo1.png" alt="Certificado Mulher" class="selo-certification">
+        </div>
+        <div class="right-stemp">
+            <img src="/img/selo2.png" alt="Certificado LGPD" class="selo-certification">
+        </div>
+    </section>
+</footer>
 </html>
