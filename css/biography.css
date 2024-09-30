@@ -15,6 +15,7 @@ body{
     background-color: #333645;
 }
 
+
 .container { /*Mexe no menu mobile*/
     max-width: 1080px;
     margin: 0 auto;
@@ -94,10 +95,14 @@ header {
     opacity: 0.8; /* Inicia com opacidade levemente reduzida */
 }
 
-.social .svg-social:hover {
-    transform: scale(0.9); /* Reduz ligeiramente o tamanho ao passar o mouse */
-    opacity: 1; /* Torna o ícone totalmente opaco ao passar o mouse */
+.social button:hover {
+    transform: scale(0.9);
 }
+
+.container1{
+    margin-top: auto;
+}
+/* Estilo para contêiner */
 .cont-sec{
     display: flex;
     flex-direction: column; /* Alinha o conteúdo em uma coluna */
@@ -140,11 +145,7 @@ Certificados Mikrotik
     outline: none;
     animation: bounce 2s infinite;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s;
-}
-.arrow:hover {
-    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Animação de subir e descer */
@@ -239,11 +240,10 @@ Certificados Mikrotik
     user-select: none;
     z-index: 1001;
     border-radius: 50%;
-    transition: background-color 0.3s;
 }
 
 .expanded-arrow:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    color: #FEA000;
 }
 
 .expanded-arrow.arrow-left {
@@ -271,8 +271,12 @@ Certificados Mikrotik
     color: white;
     cursor: pointer;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
+}
+.close-btn:hover{
+    color: #ff0054;
+    transition: transform 0.3s ease-in-out;
+
 }
 /*.cont-sec:hover, .cont-sec:focus{
     outline: none;
@@ -291,23 +295,26 @@ Certificados Mikrotik
     color: #ccc;
 }
 /* Estilo para o botão flutuante do WhatsApp */
-.whatsapp-float img {
+.whatsapp-float img{
     position: fixed;
     width: 60px;
     height: 60px;
     bottom: 20px;  /* Distância do botão para a parte inferior da tela */
     right: 20px;   /* Distância do botão para a parte direita da tela */
+    background-color: #ffffff;
+    border-radius: 50px;
     text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
-    animation: float 2s infinite; /* Usando a animação float */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    animation: bounce 2s infinite;
 }
 
-
+/* Ícone do WhatsApp */
+.whatsapp-icon {
+    margin-top: 16px;
+    font-size: 30px;
+}
 /* Efeito de salto flutuante */
 @keyframes float {
     0%, 100% {
@@ -317,6 +324,7 @@ Certificados Mikrotik
         transform: translateY(-15px);
     }
 }
+
 
 /* Estilização Mobile */
 #menu-mobile {
@@ -367,6 +375,8 @@ Certificados Mikrotik
 #sobre, #equipe, #servicos {
     scroll-margin-top: 85px; /* Altera este valor para a altura do seu cabeçalho fixo */
 }
+
+ 
  /*##############################################################
  Contêiner principal usando flexbox para centralizar os selos
  ###############################################################*/
@@ -463,4 +473,3 @@ Certificados Mikrotik
     transform: none;
 }
 }
-

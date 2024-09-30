@@ -9,7 +9,13 @@ document.querySelectorAll('#menu-mobile nav a').forEach(link => {
         menuMobile.classList.remove('active');
     };
 });
+<<<<<<< HEAD
 /*Certificados Mikrotik */
+=======
+/*#######################
+Certificados Mikrotik
+#########################*/
+>>>>>>> b1ff251bd4242846217de44abb31c3e621deb6cd
 let currentImageIndex = 0;
 const images = document.querySelectorAll('.carousel-image');
 
