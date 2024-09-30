@@ -1,0 +1,45 @@
+@media screen and (max-width: 1110px) {
+    /* Centraliza o texto e ajusta margens */
+    .carousel-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow-x: scroll;
+    }
+
+    .carousel-image {
+        max-width: 80%;
+        height: auto;
+        margin: 0 5px;
+    }
+
+    /* Ajustes para setas de navegação no carrossel */
+    .arrow {
+        display: none; /* Oculta as setas em telas pequenas */
+    }
+
+    /* Ajustes para o contêiner expandido */
+    .expanded-container {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .expanded-img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    /* Ajuste de tamanho da imagem do certificado */
+    .img-certificate-mtcna {
+        width: 80%; /* Ajusta a largura das imagens do certificado */
+        max-width: 300px; /* Define um limite máximo */
+    }
+
+    /* Ajusta o botão de fechar na versão expandida */
+    .close-btn {
+        top: 5px;
+        right: 5px;
+        font-size: 20px;
+    }
+}

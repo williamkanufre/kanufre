@@ -95,10 +95,6 @@ header {
     opacity: 0.8; /* Inicia com opacidade levemente reduzida */
 }
 
-.social button:hover {
-    transform: scale(0.9);
-}
-
 .container1{
     margin-top: auto;
 }
@@ -116,9 +112,7 @@ header {
 .container1{
     margin-top: auto;
 }
-/*#######################
-Certificados Mikrotik
-#########################*/
+/*####################### Certificados Mikrotik #########################*/
 .carousel-container {
     width: 200px;
     position: relative;
@@ -148,15 +142,6 @@ Certificados Mikrotik
     transition: background-color 0.3s;
 }
 
-/* Animação de subir e descer */
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(-60%);
-    }
-    50% {
-        transform: translateY(-70%);
-    }
-}
 .arrow-left {
     left: -50px;
 }
@@ -315,16 +300,15 @@ Certificados Mikrotik
     margin-top: 16px;
     font-size: 30px;
 }
-/* Efeito de salto flutuante */
-@keyframes float {
+/* Animação de subir e descer */
+@keyframes bounce {
     0%, 100% {
-        transform: translateY(0);
+        transform: translateY(-60%);
     }
     50% {
-        transform: translateY(-15px);
+        transform: translateY(-70%);
     }
 }
-
 
 /* Estilização Mobile */
 #menu-mobile {
@@ -365,11 +349,12 @@ Certificados Mikrotik
 }
 ::-webkit-scrollbar{
     width: 10px;
-    background-color:#ff0054;
+    background-color:#333645;
 }
 ::-webkit-scrollbar-thumb{
     width: 10px;
-    background-color: #333645;
+    background-color: #FEA000;
+    border-radius: 15px;
 }
 /* Ajuste para rolagem suave e alinhamento perfeito com o topo */
 #sobre, #equipe, #servicos {
