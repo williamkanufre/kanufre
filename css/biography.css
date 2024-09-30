@@ -12,7 +12,7 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    background-color: #272a37;
+    background-color: #333645;
 }
 
 .container { /*Mexe no menu mobile*/
@@ -24,7 +24,7 @@ body{
 }
 
 header {
-    background-color: #272a37;
+    background-color: #333645;
     width: 100%;
     padding: 10px 4%;
     position: sticky;
@@ -87,27 +87,27 @@ header {
     align-items: center;
 }
 
-.social button {
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-    border: 0;
-    cursor: pointer;
-    background-image: linear-gradient(45deg , #FF2500, #FEA000);
-    border-radius: 5px;
-    transition: transform 0.5s;
+.svg-social {
+    height: 45px;
+    width: 45px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Adiciona a transição suave */
+    opacity: 0.8; /* Inicia com opacidade levemente reduzida */
 }
 
-.social button i {
-    font-size: 20px;
-    text-align: center;
-    color: #ffffff;
+.social .svg-social:hover {
+    transform: scale(0.9); /* Reduz ligeiramente o tamanho ao passar o mouse */
+    opacity: 1; /* Torna o ícone totalmente opaco ao passar o mouse */
 }
-
-.social button:hover {
-    transform: scale(0.9);
+.cont-sec{
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo em uma coluna */
+    padding: 50px 10%;
+    border-bottom: 1px solid #ccc;
+    background-color: #333645;
+    justify-content: space-between; /* Adiciona espaço entre os itens */
+    align-items: center;
+    position: relative; /* Adicionando posição relativa para o fundo escurecido */
 }
-
 .container1{
     margin-top: auto;
 }
@@ -117,7 +117,7 @@ Certificados Mikrotik
 .carousel-container {
     width: 200px;
     position: relative;
-    margin: auto;
+    margin-top: 15px;
 }
 
 .carousel-image {
@@ -140,6 +140,11 @@ Certificados Mikrotik
     outline: none;
     animation: bounce 2s infinite;
     border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+}
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Animação de subir e descer */
@@ -158,16 +163,7 @@ Certificados Mikrotik
 .arrow-right {
     right: -50px;
 }
-.cont-sec{
-    display: flex;
-    flex-direction: column; /* Alinha o conteúdo em uma coluna */
-    padding: 50px 10%;
-    border-bottom: 1px solid #ccc;
-    background-color: #272a37;
-    justify-content: space-between; /* Adiciona espaço entre os itens */
-    align-items: center;
-    position: relative; /* Adicionando posição relativa para o fundo escurecido */
-}
+
 .img-fundador{
     width: auto;
     height: auto;
@@ -210,11 +206,79 @@ Certificados Mikrotik
 .backdrop.visible {
     display: block;
 }
-.cont-sec:hover, .cont-sec:focus{
+.expanded-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.expanded-container.visible {
+    display: flex;
+}
+
+.expanded-img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.expanded-arrow {
+    position: absolute;
+    top: 50%; /* Mantém as setas centralizadas verticalmente */
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1001;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.expanded-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.expanded-arrow.arrow-left {
+    left: -40px; /* Ajusta a posição da seta esquerda para ficar mais próxima da imagem expandida */
+}
+
+.expanded-arrow.arrow-right {
+    right: -40px; /* Ajusta a posição da seta direita para ficar mais próxima da imagem expandida */
+}
+
+/* Ajuste adicional para garantir que as setas estejam visíveis apenas no modo expandido */
+.expanded-container.visible .expanded-arrow {
+    display: block;
+}
+
+.expanded-arrow {
+    display: none; /* Oculta as setas por padrão */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+/*.cont-sec:hover, .cont-sec:focus{
     outline: none;
     border-color: #1d90f5;
     box-shadow: 0 0 0 0.3125rem #26344a;
-}
+}*/
 .cont-sec h2{
     font-size: 2em;
     margin-bottom: 15px;
@@ -227,27 +291,23 @@ Certificados Mikrotik
     color: #ccc;
 }
 /* Estilo para o botão flutuante do WhatsApp */
-.whatsapp-float {
+.whatsapp-float img {
     position: fixed;
     width: 60px;
     height: 60px;
     bottom: 20px;  /* Distância do botão para a parte inferior da tela */
     right: 20px;   /* Distância do botão para a parte direita da tela */
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
     text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
-    animation: bounce 2s infinite;
+    animation: float 2s infinite; /* Usando a animação float */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-/* Ícone do WhatsApp */
-.whatsapp-icon {
-    margin-top: 16px;
-    font-size: 30px;
-}
+
 /* Efeito de salto flutuante */
 @keyframes float {
     0%, 100% {
@@ -257,9 +317,10 @@ Certificados Mikrotik
         transform: translateY(-15px);
     }
 }
+
 /* Estilização Mobile */
 #menu-mobile {
-    background-color: #272a37;
+    background-color: #333645;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     position: fixed;
@@ -300,7 +361,7 @@ Certificados Mikrotik
 }
 ::-webkit-scrollbar-thumb{
     width: 10px;
-    background-color: #272a37;
+    background-color: #333645;
 }
 /* Ajuste para rolagem suave e alinhamento perfeito com o topo */
 #sobre, #equipe, #servicos {

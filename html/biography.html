@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <script src="https://kit.fontawesome.com/6dda5f6271.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,6 @@
     <link rel="stylesheet" href="/css/slide.css">
     <!-- SCRIPTS -->
     <script src="/js/menu.js" defer></script>
-    <!--<script src="/js/contact.js" defer></script>-->
     <script src="/js/biography.js" defer></script>
     <script src="/js/slide.js" defer></script>
     <script src="/js/expanded.js" defer></script>
@@ -29,14 +29,14 @@
                     <a href="#equipe">Fundador</a>
                     <a href="#servicos">Serviços</a>
                     <a href="/html/maintenance.html">Projetos</a>
-                    <!--<a href="/html/contato.html">Contato</a>-->
                 </nav>
             </div>
             <div class="hamburger-menu" id="btn-menu">
                 <i class="fa fa-bars"></i>
             </div>
             <div class="social">
-                <a href="https://www.instagram.com/kanufretecnologia/" target="_blank"><button><i class="fa-brands fa-instagram"></i></button></a>
+                <a class="social" href="https://www.instagram.com/kanufretecnologia/" target="_blank"><img class="svg-social" src="/svg/instagram-1-svgrepo-com.svg"></a>
+
             </div>
         </div>
     </header>
@@ -47,8 +47,7 @@
             <a href="#equipe">Fundador</a>
             <a href="#servicos">Serviços</a>
             <a href="/html/maintenance.html">Projetos</a>
-            <!--<a href="/html/contato.html">Contato</a>-->
-            <a class="social" href="https://www.instagram.com/kanufretecnologia/" target="_blank"><button><i class="fa-brands fa-instagram"></i></button></a>
+            <a class="social" href="https://www.instagram.com/kanufretecnologia/" target="_blank"><img class="svg-social" src="/svg/instagram-1-svgrepo-com.svg"></a>
         </nav>
     </div>
     <section class="slider">
@@ -116,74 +115,18 @@
             <p>O fundador, William Kanufre, é graduado em Redes de Computadores pela Universidade Cruzeiro do Sul e possui certificação internacional da academia MikrotikIs SIA como MikroTik Certified Network Associate (MTCNA). Além disso, é pós-graduado em Cybersecurity. Movido pelo desejo de criar algo próprio, ele deu origem à Kanufre Tecnologia.</p>
         </div>
         <div class="carousel-container" id="imgs-founder">
-            <style>
-                .carousel-container {
-                    width: 200px;
-                    position: relative;
-                    margin: auto;
-                }
-        
-                .carousel-image {
-                    display: none;
-                    width: 100%;
-                }
-        
-                .active {
-                    display: block;
-                }
-        
-                .arrow {
-                    cursor: pointer;
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    font-size: 2rem;
-                    color: white;
-                    padding: 10px;
-                    outline: none;
-                    animation: bounce 2s infinite;
-                    border-radius: 50%;
-                }
-
-                /* Animação de subir e descer */
-                @keyframes bounce {
-                    0%, 100% {
-                        transform: translateY(-60%);
-                    }
-                    50% {
-                        transform: translateY(-70%);
-                    }
-                }
-                .arrow-left {
-                    left: -50px;
-                }
-        
-                .arrow-right {
-                    right: -50px;
-                }
-
-            </style>
-        
             <!-- Certificados -->
             <img src="/img/MTCNA.png" alt="Certificado MTCNA" class="carousel-image active img-certificate-mtcna expandable expandable-desktop">
             <img src="/img/MTCRE.png" alt="Certificado MTCRE" class="carousel-image img-certificate-mtcna expandable expandable-desktop">
             <img src="/img/MTCSE.png" alt="Certificado MTCSE" class="carousel-image img-certificate-mtcna expandable expandable-desktop">
         
-            <!-- Setas de navegação -->
-            <span class="arrow arrow-left" onclick="changeImage(-1)">&#10094;</span>
-            <span class="arrow arrow-right" onclick="changeImage(1)">&#10095;</span>
         </div>
-        
-        <script>
-            let currentImageIndex = 0;
-            const images = document.querySelectorAll('.carousel-image');
-        
-            function changeImage(direction) {
-                images[currentImageIndex].classList.remove('active');
-                currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
-                images[currentImageIndex].classList.add('active');
-            }
-        </script>
+        <div class="expanded-container" id="expandedContainer">
+            <img id="expandedImage" class="expanded-img" src="" alt="Imagem Expandida">
+            <span class="arrow arrow-left expanded-arrow" onclick="changeExpandedImage(-1)">&#10094;</span>
+            <span class="arrow arrow-right expanded-arrow" onclick="changeExpandedImage(1)">&#10095;</span>
+            <span class="close-btn" onclick="closeExpandedImage()">&#10006;</span>
+        </div>
     </section>
     <section class="cont-sec">
         <a class="anchor" id="servicos"></a>
@@ -202,13 +145,10 @@
     </section>
     <!-- Backdrop para imagem expandida -->
     <div class="backdrop" id="backdrop"></div>
-    <!-- Botão do WhatsApp -->
+    <!-- Botão do WhatsApp com SVG -->
     <a href="https://api.whatsapp.com/send?phone=5541984951703" class="whatsapp-float" target="_blank">
-        <i class="fa fa-whatsapp whatsapp-icon"></i>
+        <img src="/svg/whatsapp-svgrepo-com.svg" alt="WhatsApp" width="30" height="30" />
     </a>
-
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/6dda5f6271.js" crossorigin="anonymous"></script>
 </body>
 <footer>
     <!-- Selos de Certificação -->
