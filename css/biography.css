@@ -466,24 +466,19 @@ header {
 
 /*######### IMG STEMPS #########*/
 .selo-certification {
-  width: 120px;
+  width: 100px;
   height: auto;
-  transition: transform 0.3s ease; /* Efeito de transição suave */
   padding: 10px;
 }
-.stemp_MTC{
+.stemp_MTC, .stemp_ITIL{
     width: 120px;
     height: auto;
     padding: 10px;
 }
-.logo-centro-kanufrer{
-    width: 70px;
+.logo-centro-kanufre, .stemp_NGD{
+    width: 100px;
     height: auto;
     padding: 5px;
-}
-/* Efeito hover para aumentar os selos */
-.selo-certification:hover {
-    transform: scale(1.1);
 }
 
 /* Media queries para responsividade */
