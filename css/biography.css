@@ -11,6 +11,11 @@
 html {
     scroll-behavior: smooth;
 }
+.title-h3{
+    margin-bottom: 15px;
+    font-size: 18pt;
+    color: #FEA000;
+}
 body{
     background-color: #333645;
 }
@@ -150,8 +155,52 @@ header {
     align-items: center;
     position: relative; /* Adicionando posição relativa para o fundo escurecido */
 }
-.container1{
-    margin-top: auto;
+/* Estilos para as divs de missão, visão e valores */
+.mission-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adiciona espaçamento entre os blocos */
+    max-width: 1100px;
+    margin: 0 auto; /* Centraliza o contêiner como um todo */
+}
+
+.mission, .vision, .value {
+    width: 30%; /* Cada div ocupa 30% da largura disponível */
+    background-color: #2e2e3e;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center; /* Centraliza o conteúdo dentro de cada bloco */
+}
+
+.mission img, .vision img, .value img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.mission h3, .vision h3, .value h3 {
+    font-size: 14pt;
+    color: #FEA000;
+    margin-bottom: 10px;
+}
+
+.mission p, .vision p, .value p {
+    font-size: 12pt;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Estilos responsivos para telas menores */
+@media screen and (max-width: 768px) {
+    .mission-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission, .vision, .value {
+        width: 100%;
+        margin-bottom: 20px; /* Espaçamento entre os blocos no mobile */
+    }
 }
 /*####################### Certificados Mikrotik #########################*/
 .carousel-container {
@@ -309,15 +358,8 @@ header {
     border-color: #1d90f5;
     box-shadow: 0 0 0 0.3125rem #26344a;
 }*/
-.cont-sec h2{
-    font-size: 2em;
-    margin-bottom: 15px;
-    font-size: 18pt;
-    color: #FEA000;
-}
-
 .cont-sec p, br{
-    font-size: 12pt;
+    font-size: 12.5pt;
     color: #ccc;
 }
 /* Estilo para o botão flutuante do WhatsApp */
@@ -410,6 +452,7 @@ header {
  /*##############################################################
  Contêiner principal usando flexbox para centralizar os selos
  ###############################################################*/
+
 .certification-stamps {
     display: flex;
     justify-content: space-between; /* Distribui o espaço horizontalmente */
@@ -421,14 +464,23 @@ header {
     margin: 0 auto; /* Centraliza o contêiner */
     }
 
-/* Classe comum para os selos */
-    .selo-certification {
-        width: 150px;
-        height: auto;
-        transition: transform 0.3s ease; /* Efeito de transição suave */
-        padding: 10px;
-    }
-
+/*######### IMG STEMPS #########*/
+.selo-certification {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s ease; /* Efeito de transição suave */
+  padding: 10px;
+}
+.stemp_MTC{
+    width: 120px;
+    height: auto;
+    padding: 10px;
+}
+.logo-centro-kanufrer{
+    width: 70px;
+    height: auto;
+    padding: 5px;
+}
 /* Efeito hover para aumentar os selos */
 .selo-certification:hover {
     transform: scale(1.1);
