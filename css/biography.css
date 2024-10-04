@@ -16,10 +16,19 @@ html {
     font-size: 18pt;
     color: #FEA000;
 }
+.title-h2{
+    margin-bottom: 15px;
+    font-size: 18pt;
+    color: #FEA000;
+}
+p, br{
+    font-size: 12.5pt;
+    color: #ccc;
+    line-height: 1.6;
+}
 body{
     background-color: #333645;
 }
-
 
 .container { /*Mexe no menu mobile*/
     max-width: 1080px;
@@ -185,7 +194,7 @@ header {
 }
 
 .mission p, .vision p, .value p {
-    font-size: 12pt;
+    font-size: 12.5pt;
     color: #ccc;
     line-height: 1.6;
 }
@@ -358,9 +367,51 @@ header {
     border-color: #1d90f5;
     box-shadow: 0 0 0 0.3125rem #26344a;
 }*/
-.cont-sec p, br{
+
+.services-container {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    gap: 20px; /* Adiciona espaçamento entre os blocos */
+    max-width: 1100px;
+    margin: 0 auto; /* Centraliza o contêiner como um todo */
+    flex-wrap: wrap; /* Permite que os itens se ajustem em múltiplas linhas se necessário */
+}
+
+.services {
+    flex-grow: 1; /* Permite que as divs cresçam igualmente para preencher o espaço */
+    background-color: #2e2e3e;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center; /* Centraliza o conteúdo dentro de cada bloco */
+    min-width: 250px; /* Defina um valor mínimo para evitar que as divs fiquem muito pequenas */
+    max-width: 30%; /* Mantém um limite de largura máxima para as divs */
+}
+
+.services h2 {
+    font-size: 14pt;
+    color: #FEA000;
+    margin-bottom: 10px;
+}
+
+.services p {
     font-size: 12.5pt;
     color: #ccc;
+    line-height: 1.6;
+    text-align: justify; /* Alinha o texto de forma uniforme em todo o bloco */
+}
+
+/* Estilos responsivos para telas menores */
+@media screen and (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services {
+        width: 100%; /* Ocupa 100% da largura no mobile */
+        margin-bottom: 20px; /* Espaçamento entre os blocos no mobile */
+    }
 }
 /* Estilo para o botão flutuante do WhatsApp */
 .whatsapp-float img{
@@ -508,11 +559,6 @@ header {
     /* #####################################################
     /* Estilos para a imagem e backdrop na versão Mobile 
     #######################################################*/
-    .cont-sec {
-        flex-direction: column; /* Muda a direção do layout para coluna em telas pequenas */
-        align-items: center; /* Centraliza o conteúdo */
-    }
-
     .img-certificate-mtcna {
         width: 100%; /* Ajusta a largura da imagem para 100% da largura disponível */
         max-width: 300px; /* Define um limite máximo de largura para a imagem */
