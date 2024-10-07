@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/biography.css">
     <link rel="stylesheet" href="/css/slide.css">
     <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="stylesheet" href="/css/menu-mobile.css"
     <!-- SCRIPTS -->
     <script src="/js/menu.js" defer></script>
     <script src="/js/biography.js" defer></script>
@@ -100,10 +101,12 @@
     <section class="cont-sec">
         <a class="anchor" id="sobre"></a>
         <div class="container1">
-                <h3 class="title-h3">
-                    SOBRE
-                </h3>
-                <p>Bem-vindo ao universo inovador da Kanufre Tecnologia, onde a paixão pelo futuro e a tradição de excelência se encontram.</p><br>
+            <h3 class="title-h3">
+                SOBRE
+            </h3>
+            <p>
+                Bem-vindo ao universo inovador da Kanufre Tecnologia, onde a paixão pelo futuro e a tradição de excelência se encontram.
+            </p>
             <div class="mission-container">
                 <div class="mission"><img src="/svg/stemps-mission.svg" alt="Nossa Missão">
                     <h3>
@@ -141,24 +144,38 @@
             <h3 class="title-h3">
                 FUNDADOR
             </h3>
-            <p>O fundador, William Kanufre, é graduado em Redes de Computadores pela Universidade Cruzeiro do Sul e possui certificação internacional da academia MikrotikIs SIA como:
-                 MikroTik Certified Network Associate (MTCNA), MikroTik Certified Routing Engineer (MTCRE) e MikroTik Certified Security Engineer (MTCSE). 
-                 Além disso, é pós-graduado em Cybersecurity. Movido pelo desejo de criar algo próprio, ele deu origem à Kanufre Tecnologia.</p>
-        </div>
-        <section class="left-screen">
-            <div class="carousel-container" id="imgs-founder">
-                <!-- Certificados -->
-                <img src="/img/MTCNA.png" alt="Certificado MTCNA" class="carousel-image active img-certificate-mtcna expandable expandable-desktop">
-                <img src="/img/MTCRE.png" alt="Certificado MTCRE" class="carousel-image img-certificate-mtcna expandable expandable-desktop">
-                <img src="/img/MTCSE.png" alt="Certificado MTCSE" class="carousel-image img-certificate-mtcna expandable expandable-desktop">
+            <div class="container-geral-founder">
+                <!-- Right-screen: Informações do Fundador -->
+                <section class="founder-container right-screen">
+                    <h2 class="title-h2">WILLIAM KANUFRE</h2>
+                    <p>
+                        Graduado em Redes de Computadores pela Universidade Cruzeiro do Sul e possui certificação internacional da academia MikrotikIs SIA como:
+                        MikroTik Certified Network Associate (MTCNA), MikroTik Certified Routing Engineer (MTCRE) e MikroTik Certified Security Engineer (MTCSE).
+                        Além disso, é pós-graduado em Cybersecurity. Movido pelo desejo de criar algo próprio, ele deu origem à Kanufre Tecnologia, assim pode aplicar
+                        todo o seu conhecimento nas marcas MIKROTIK, INTELBRAS e STARLINK.
+                    </p>
+                </section>
+            
+                <!-- Arrows-container: Contém as setas de navegação -->
+                <div class="arrows-container">
+                    <div class="arrow-left-normal" id="arrow-left">
+                        <img src="/svg/arrow-left-normal.svg" alt="Seta Esquerda" class="arrow-icon">
+                    </div>
+                    <div class="arrow-right-normal" id="arrow-right">
+                        <img src="/svg/arrow-right-normal.svg" alt="Seta Direita" class="arrow-icon">
+                    </div>
+                </div>
+            
+                <!-- Certificados: Contém as imagens dos certificados -->
+                <section class="certifields-MTC">
+                    <img src="/img/MTCNA.png" alt="Certificado MTCNA" class="carousel-image img-certificate-mtc active" id="cert1">
+                    <img src="/img/MTCRE.png" alt="Certificado MTCRE" class="carousel-image img-certificate-mtc" id="cert2">
+                    <img src="/img/MTCSE.png" alt="Certificado MTCSE" class="carousel-image img-certificate-mtc" id="cert3">
+                </section>
             </div>
-            <div class="expanded-container" id="expandedContainer">
-                <img id="expandedImage" class="expanded-img" src="" alt="Imagem Expandida">
-                <span class="arrow arrow-left expanded-arrow" onclick="changeExpandedImage(-1)">&#10094;</span>
-                <span class="arrow arrow-right expanded-arrow" onclick="changeExpandedImage(1)">&#10095;</span>
-                <span class="close-btn" onclick="closeExpandedImage()">&#10006;</span>
-            </div>
-        </section>
+            
+            <!-- Mensagem para dispositivos móveis -->
+            <p class="mobile-message">Deslize para ver mais!</p>
     </section>
     <section class="cont-sec">
         <a class="anchor" id="servicos"></a>
@@ -199,34 +216,46 @@
     </a>
 </body>
 <footer>
-    <h3 class="title-h3">
-        NOSSAS CERTIFICAÇÕES
-    </h3>
-    <!-- Selos de Certificação -->
-    <section class="certification-stamps stemps_mikrotik" id="stemps_mikrotiks">
-        <div class="stemps-mtcna">
-            <img src="/svg/stemps-mtcna.svg" alt="Selo MTCNA" class="stemp_MTC">
-        </div>
-        <div class="stemps-mtcre">
-            <img src="/svg/stemps-mtcre.svg" alt="Selo MTCNA" class="stemp_MTC">
-        </div>
-        <div class="stemps-mtcse">
-            <img src="/svg/stemps-mtcse.svg" alt="Selo MTCNA" class="stemp_MTC">
-        </div>
-        <div class="stemps-itil">
-            <img src="/svg/stemps-ITIL.svg" alt="Selo ITIL V3" class="stemp_ITIL">
-        </div>
-        <div class="stemps-NGD">
-            <img src="/svg/stemps-ngd-linux.svg" alt="Selo NGD Linux" class="stemp_NGD">
-        </div>
-        <div class="left-stemp">
-            <img src="/img/selo.png" alt="Certificado Cyber" class="selo-certification">
-        </div>
-        <div class="center-stemp">
-            <img src="/img/selo1.png" alt="Certificado Mulher" class="selo-certification">
-        </div>
-        <div class="right-stemp">
-            <img src="/img/selo2.png" alt="Certificado LGPD" class="selo-certification">
+    <section class="cont-sec">
+        <div class="container1">
+            <h3 class="title-h3">
+                NOSSAS CERTIFICAÇÕES
+            </h3>
+            <section class="stemps-container">
+                <section class="stemps-mikrotik semps-up">
+                    <div class="stemps-mtcna">
+                        <img src="/svg/stemps-mtcna.svg" alt="Selo MTCNA" class="stemp_MTC">
+                    </div>
+                    <div class="stemps-mtcre">
+                        <img src="/svg/stemps-mtcre.svg" alt="Selo MTCNA" class="stemp_MTC">
+                    </div>
+                    <div class="stemps-mtcse">
+                        <img src="/svg/stemps-mtcse.svg" alt="Selo MTCNA" class="stemp_MTC">
+                    </div>
+                </section>
+                <section class="stemps-diferent stemps-center">
+                    <div class="stemps-itil">
+                        <img src="/svg/stemps-ITIL.svg" alt="Selo ITIL V3" class="stemp_ITIL">
+                    </div>
+                    <div class="stemps-logo">
+                        <img src="/svg/stemps-kanufre.svg" alt="Selo ITIL V3" class="stemp_logo">
+                    </div>
+                    <div class="stemps-NGD">
+                        <img src="/svg/stemps-ngd-linux.svg" alt="Selo NGD Linux" class="stemp_NGD">
+                    </div>
+                </section>
+                <section class="stemps-intuix stemps-down">
+                    <div class="stemp-cyber">
+                        <img src="/img/selo.png" alt="Certificado Cyber" class="selo-certification">
+                    </div>
+                    <div class="center-women">
+                        <img src="/img/selo1.png" alt="Certificado Mulher" class="selo-certification">
+                    </div>
+                    <div class="stemp-lgpd">
+                        <img src="/img/selo2.png" alt="Certificado LGPD" class="selo-certification">
+                    </div>
+                </section>
+            </section>
         </div>
     </section>
 </footer>

@@ -1,0 +1,41 @@
+/* Estilização Mobile */
+#menu-mobile {
+    background-color: #333645;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    z-index: 1000;
+    transition: 0.5s;
+    overflow: hidden;
+}
+#menu-mobile nav a {
+    display: block;
+    color: #ffffff;
+    padding: 20px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+#menu-mobile nav a:hover, #btn-menu:hover {
+    color: #FEA000;
+}
+#menu-mobile nav a:hover,#menu-mobile nav a:focus {
+    outline: none;
+    border-color: #1d90f5;
+    box-shadow: 0 0 0 0.3146rem #253041;
+}
+#menu-mobile.active {
+    display: block;
+}
+
+#btn-menu {
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    display:none;
+}
